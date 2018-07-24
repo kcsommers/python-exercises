@@ -9,3 +9,19 @@
 #
 # > 120
 #
+
+# def factorial(num):
+# 	total = 1
+# 	arr = list(range(1, num + 1))
+# 	for number in arr:
+# 		total = total * number
+# 	return total
+
+# print(factorial(5))
+
+from functools import reduce
+
+def factorial(num):
+	return reduce((lambda acc, curr: acc * curr), list(range(1, num + 1)))
+
+print(factorial(5))

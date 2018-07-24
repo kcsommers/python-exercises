@@ -10,3 +10,18 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+# def multiply_by(arr, num):
+# 	new_arr = []
+# 	for number in arr:
+# 		number = number * num
+# 		new_arr.append(number)
+# 	return(new_arr)
+
+# print(multiply_by([1, 2, 3], 50))
+
+
+def multiply_by(arr, num):
+	return list(map(lambda x: x * num, arr))
+
+print(multiply_by([1, 2, 3], 50))

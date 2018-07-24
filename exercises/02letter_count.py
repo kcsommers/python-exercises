@@ -30,4 +30,15 @@
 #
 # letter_count('banana')
 #
-# > {'a': 3, 'b': 2}
+# > {'a': 3, 'b': 1, 'n': 2}
+
+def letter_count(str):
+	count = {}
+	for char in str:
+		if char in count:
+			count[char] += 1
+		else:
+			count[char] = 1
+	return(count)
+
+print(letter_count('electricity'))
